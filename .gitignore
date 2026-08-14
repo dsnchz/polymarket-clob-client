@@ -23,3 +23,6 @@ coverage/
 .yalc
 yalc.lock
 .pnpm-debug.log*
+
+# Agent context & planning (local-only, per-machine)
+.agent/

@@ -1,23 +1,7 @@
 {
   "name": "@dschz/polymarket-clob-client",
-  "description": "Fork of Polymarket CLOB Client with optimized bundle size and enhanced Web3 integration",
   "version": "0.4.4",
-  "author": "Daniel Sanchez <dsanc89@pm.me>",
-  "license": "MIT",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "homepage": "https://github.com/dsnchz/polymarket-clob-client#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dsnchz/polymarket-clob-client.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dsnchz/polymarket-clob-client/issues"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "description": "Fork of Polymarket CLOB Client with optimized bundle size and enhanced Web3 integration",
   "keywords": [
     "blockchain",
     "browser",
@@ -42,9 +26,22 @@
     "walletconnect",
     "web3"
   ],
+  "homepage": "https://github.com/dsnchz/polymarket-clob-client#readme",
+  "bugs": {
+    "url": "https://github.com/dsnchz/polymarket-clob-client/issues"
+  },
+  "license": "MIT",
+  "author": "Daniel Sanchez <dsanc89@pm.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsnchz/polymarket-clob-client.git"
+  },
   "files": [
     "dist"
   ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -52,12 +49,15 @@
       "default": "./dist/index.js"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
     "deploy": "bun run build && bun publish",
-    "format": "prettier . --check",
-    "format:fix": "prettier . --write",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "pkg:changeset": "changeset",
@@ -66,6 +66,16 @@
     "test": "bun test",
     "test:cov": "bun test --coverage",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dschz/polymarket-builder-signing-sdk": "^0.3.0",
+    "@dschz/polymarket-clob-order-utils": "^0.2.1",
+    "@ethersproject/bignumber": "^5.8.0",
+    "@ethersproject/constants": "^5.8.0",
+    "@ethersproject/contracts": "^5.8.0",
+    "@ethersproject/providers": "^5.8.0",
+    "@ethersproject/units": "^5.8.0",
+    "@ethersproject/wallet": "^5.8.0"
   },
   "devDependencies": {
     "@changesets/cli": "2.29.7",
@@ -84,22 +94,12 @@
     "globals": "16.4.0",
     "jiti": "2.6.1",
     "jsdom": "27.0.1",
+    "oxfmt": "^0.60.0",
     "path": "0.12.7",
-    "prettier": "3.6.2",
     "tsup": "8.5.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.46.2",
     "ws": "8.18.3"
-  },
-  "dependencies": {
-    "@dschz/polymarket-builder-signing-sdk": "^0.3.0",
-    "@dschz/polymarket-clob-order-utils": "^0.2.1",
-    "@ethersproject/bignumber": "^5.8.0",
-    "@ethersproject/constants": "^5.8.0",
-    "@ethersproject/contracts": "^5.8.0",
-    "@ethersproject/providers": "^5.8.0",
-    "@ethersproject/units": "^5.8.0",
-    "@ethersproject/wallet": "^5.8.0"
   },
   "engines": {
     "node": ">=20.0.0"

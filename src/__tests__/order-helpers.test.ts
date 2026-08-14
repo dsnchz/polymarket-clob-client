@@ -409,9 +409,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1000; ) {
+        for (; size <= 1000;) {
           let price = 0.1;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.BUY,
               size,
@@ -436,9 +436,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 100; ) {
+        for (; size <= 100;) {
           let price = 0.01;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.BUY,
               size,
@@ -463,9 +463,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 10; ) {
+        for (; size <= 10;) {
           let price = 0.001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.BUY,
               size,
@@ -490,9 +490,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1; ) {
+        for (; size <= 1;) {
           let price = 0.0001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.BUY,
               size,
@@ -519,9 +519,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1000; ) {
+        for (; size <= 1000;) {
           let price = 0.1;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.SELL,
               size,
@@ -546,9 +546,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 100; ) {
+        for (; size <= 100;) {
           let price = 0.01;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.SELL,
               size,
@@ -573,9 +573,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 10; ) {
+        for (; size <= 10;) {
           let price = 0.001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.SELL,
               size,
@@ -600,9 +600,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1; ) {
+        for (; size <= 1;) {
           let price = 0.0001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             const { rawMakerAmt, rawTakerAmt } = getOrderRawAmounts(
               Side.SELL,
               size,
@@ -2321,9 +2321,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1000; ) {
+        for (; size <= 1000;) {
           let price = 0.1;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.BUY,
@@ -2349,9 +2349,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 100; ) {
+        for (; size <= 100;) {
           let price = 0.01;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.BUY,
@@ -2377,9 +2377,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 10; ) {
+        for (; size <= 10;) {
           let price = 0.001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.BUY,
@@ -2405,9 +2405,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1; ) {
+        for (; size <= 1;) {
           let price = 0.0001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.BUY,
@@ -2434,9 +2434,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1000; ) {
+        for (; size <= 1000;) {
           let price = 0.1;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.SELL,
@@ -2462,9 +2462,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 100; ) {
+        for (; size <= 100;) {
           let price = 0.01;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.SELL,
@@ -2490,9 +2490,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 10; ) {
+        for (; size <= 10;) {
           let price = 0.001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.SELL,
@@ -2518,9 +2518,9 @@ describe("helpers", () => {
         const delta_size = 0.01;
         let size = 0.01;
 
-        for (; size <= 1; ) {
+        for (; size <= 1;) {
           let price = 0.0001;
-          for (; price <= 1; ) {
+          for (; price <= 1;) {
             price = roundNormal(price, 8);
             const { rawMakerAmt, rawTakerAmt } = getMarketOrderRawAmounts(
               Side.SELL,
